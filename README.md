@@ -96,5 +96,5 @@ we perform a detailed analysis of the different functions involved in the algori
 
 Therefore, the total complexity of the algorithm would be the sum of the complexities of these functions. However, since
 we are interested in the worst-case scenario, we select the function with the highest complexity, which in this case is
-$mergeSort(\dots) with a time complexity of $\Theta(n \log n)$. This means that in the worst case, the algorithm will
+$mergeSort(\dots)$ with a time complexity of $\Theta(n \log n)$. This means that in the worst case, the algorithm will
 have a complexity of $\Theta(n \log n)$.
