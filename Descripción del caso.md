@@ -82,7 +82,7 @@ análisis y pronóstico de resultados en partidos de fútbol de ligas específic
 
 **Partido (DÉBIL):**
 
-```html
+```python
 > ID del partido
 > Fecha del partido
 > ID equipo local
