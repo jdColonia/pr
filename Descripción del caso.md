@@ -90,10 +90,10 @@ análisis y pronóstico de resultados en partidos de fútbol de ligas específic
 
 **Partido (DÉBIL):**
 
-```console
+```
 > ID del partido
 > Fecha del partido
-> ID equipo local
+:arrow_forward: ID equipo local
 > ID equipo visitante
 > ID del árbitro
 > Promedio de goles esperados
