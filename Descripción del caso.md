@@ -1,5 +1,13 @@
 # <a name="titulo1"></a>**Descripción del caso**
 
+<p><strong>Usuario (FUERTE):</strong></p>
+<ul>
+  <li class="red-gt">ID del usuario</li>
+  <li class="red-gt">Nombre</li>
+  <li class="red-gt">Fecha de registro</li>
+  <li class="red-gt">Liga de preferencia</li>
+</ul>
+
 ## Aplicación
 
 En el mundo del deporte, las apuestas son una actividad común y emocionante. Sin embargo, hacer pronósticos precisos
