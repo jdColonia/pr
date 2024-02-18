@@ -1,13 +1,5 @@
 # <a name="titulo1"></a>**Descripción del caso**
 
-<p><strong>Usuario (FUERTE):</strong></p>
-<ul>
-  <li class="red-gt">ID del usuario</li>
-  <li class="red-gt">Nombre</li>
-  <li class="red-gt">Fecha de registro</li>
-  <li class="red-gt">Liga de preferencia</li>
-</ul>
-
 ## Aplicación
 
 En el mundo del deporte, las apuestas son una actividad común y emocionante. Sin embargo, hacer pronósticos precisos
@@ -52,148 +44,130 @@ análisis y pronóstico de resultados en partidos de fútbol de ligas específic
 ### Entidades
 
 **Usuario (FUERTE):**
-
-```bash
-> ID del usuario
-> Nombre
-> Fecha de registro
-> Liga de preferencia
-```
+> - ID del usuario
+> - Nombre
+> - Fecha de registro
+> - Liga de preferencia
 
 **Equipo (FUERTE):**
-
-```bash
-> ID del equipo
-> ID de la liga
-> Nombre del equipo
-> Estadio
-```
+> - ID del equipo
+> - ID de la liga
+> - Nombre del equipo
+> - Estadio
 
 **Liga (FUERTE):**
-
-```bash
-> ID de la liga
-> Nombre de la liga
-> País
-> Número de equipos
-```
+> - ID de la liga
+> - Nombre de la liga
+> - País
+> - Número de equipos
 
 **Árbitro (FUERTE):**
-
-```bash
-> ID del árbitro
-> ID de la liga
-> Nombre del árbitro
-> Promedio de tarjetas amarillas
-> Promedio de tarjetas rojas
-```
+> - ID del árbitro
+> - ID de la liga
+> - Nombre del árbitro
+> - Promedio de tarjetas amarillas
+> - Promedio de tarjetas rojas
 
 **Partido (DÉBIL):**
-
-```
-> ID del partido
-> Fecha del partido
-:arrow_forward: ID equipo local
-> ID equipo visitante
-> ID del árbitro
-> Promedio de goles esperados
-> Promedio de córners esperados
-> Promedio de tarjetas esperadas
-```
+> - ID del partido
+> - Fecha del partido
+> - ID equipo local
+> - ID equipo visitante
+> - ID del árbitro
+> - Promedio de goles esperados
+> - Promedio de córners esperados
+> - Promedio de tarjetas esperadas
 
 **Estadísticas (DÉBIL):**
-
-```bash
-> ID del equipo
-> Número de victorias
-> Número de derrotas
-> Número de empates
-> Puntos totales en la temporada
-> Promedio de goles
-> Promedio de córners a favor
-> Promedio de córners en contra
-> Promedio de tarjetas a favor
-> Promedio de tarjetas en contra
-```
+> - ID del equipo
+> - Número de victorias
+> - Número de derrotas
+> - Número de empates
+> - Puntos totales en la temporada
+> - Promedio de goles
+> - Promedio de córners a favor
+> - Promedio de córners en contra
+> - Promedio de tarjetas a favor
+> - Promedio de tarjetas en contra
 
 ### Relaciones
 
 1. **Usuario - Liga**
-    - **Descripción:** Un usuario tiene una liga de preferencia. Por lo tanto, existe una relación de uno a uno entre el
-      Usuario y la Liga.
+   - **Descripción:** Un usuario tiene una liga de preferencia. Por lo tanto, existe una relación de uno a uno entre el
+     Usuario y la Liga.
 2. **Equipo - Liga**
-    - **Descripción:** Un equipo pertenece a una liga, y una liga puede tener varios equipos. Por lo tanto, existe una
-      relación de uno a muchos entre la Liga y el Equipo.
+   - **Descripción:** Un equipo pertenece a una liga, y una liga puede tener varios equipos. Por lo tanto, existe una
+     relación de uno a muchos entre la Liga y el Equipo.
 3. **Árbitro - Liga**
-    - **Descripción:** Un árbitro arbitra en una liga, y una liga puede tener varios árbitros. Por lo tanto, existe una
-      relación de uno a muchos entre la Liga y el Árbitro.
+   - **Descripción:** Un árbitro arbitra en una liga, y una liga puede tener varios árbitros. Por lo tanto, existe una
+     relación de uno a muchos entre la Liga y el Árbitro.
 4. **Partido - Equipo**
-    - **Descripción:** Un partido implica a dos equipos (local y visitante). Por lo tanto, existe una relación de muchos
-      a muchos entre el Partido y el Equipo.
+   - **Descripción:** Un partido implica a dos equipos (local y visitante). Por lo tanto, existe una relación de muchos
+     a muchos entre el Partido y el Equipo.
 5. **Partido - Árbitro**
-    - **Descripción:** Un partido es arbitrado por un árbitro. Por lo tanto, existe una relación de uno a uno entre el
-      Partido y el Árbitro.
+   - **Descripción:** Un partido es arbitrado por un árbitro. Por lo tanto, existe una relación de uno a uno entre el
+     Partido y el Árbitro.
 6. **Estadísticas - Equipo**
-    - **Descripción:** Las estadísticas están asociadas a un equipo. Por lo tanto, existe una relación de uno a uno
-      entre las Estadísticas y el Equipo.
+   - **Descripción:** Las estadísticas están asociadas a un equipo. Por lo tanto, existe una relación de uno a uno
+     entre las Estadísticas y el Equipo.
 
 ## Reportes de Interés
 
 1. **Promedio de Tarjetas a Favor y en Contra**
-    - **Descripción:** Este reporte calcula el promedio de tarjetas amarillas y rojas recibidas y concedidas por los
-      equipos. Es útil para evaluar el comportamiento disciplinario de los equipos y su impacto en el juego.
-    - **Datos del Informe:** Nombre del equipo, Promedio de tarjetas amarillas recibidas, Promedio de tarjetas amarillas
-      concedidas, Promedio de tarjetas rojas recibidas, Promedio de tarjetas rojas concedidas.
+   - **Descripción:** Este reporte calcula el promedio de tarjetas amarillas y rojas recibidas y concedidas por los
+     equipos. Es útil para evaluar el comportamiento disciplinario de los equipos y su impacto en el juego.
+   - **Datos del Informe:** Nombre del equipo, Promedio de tarjetas amarillas recibidas, Promedio de tarjetas amarillas
+     concedidas, Promedio de tarjetas rojas recibidas, Promedio de tarjetas rojas concedidas.
 
 2. **Equipos con Más Victorias**
-    - **Descripción:** Este reporte identifica los equipos con el mayor número de victorias, proporcionando una visión
-      clara de los equipos más exitosos en términos de resultados.
-    - **Datos del Informe:** Nombre del equipo, Número de victorias.
+   - **Descripción:** Este reporte identifica los equipos con el mayor número de victorias, proporcionando una visión
+     clara de los equipos más exitosos en términos de resultados.
+   - **Datos del Informe:** Nombre del equipo, Número de victorias.
 
 3. **Partidos con Más Goles Esperados**
-    - **Descripción:** Este reporte destaca los partidos con la mayor expectativa de goles, basándose en el promedio de
-      goles esperados de los equipos participantes. Ayuda a identificar los encuentros más emocionantes en términos de
-      potencial de puntuación.
-    - **Datos del Informe:** Fecha del partido, Equipos involucrados, Promedio de goles esperados.
+   - **Descripción:** Este reporte destaca los partidos con la mayor expectativa de goles, basándose en el promedio de
+     goles esperados de los equipos participantes. Ayuda a identificar los encuentros más emocionantes en términos de
+     potencial de puntuación.
+   - **Datos del Informe:** Fecha del partido, Equipos involucrados, Promedio de goles esperados.
 
 4. **Árbitros con Más Tarjetas**
-    - **Descripción:** Este reporte identifica a los árbitros que han mostrado más tarjetas amarillas y rojas. Es útil
-      para evaluar el estilo de arbitraje y su impacto en el desarrollo del juego.
-    - **Datos del Informe:** Nombre del árbitro, Promedio de tarjetas amarillas mostradas, Promedio de tarjetas rojas
-      mostradas.
+   - **Descripción:** Este reporte identifica a los árbitros que han mostrado más tarjetas amarillas y rojas. Es útil
+     para evaluar el estilo de arbitraje y su impacto en el desarrollo del juego.
+   - **Datos del Informe:** Nombre del árbitro, Promedio de tarjetas amarillas mostradas, Promedio de tarjetas rojas
+     mostradas.
 
 5. **Partidos con Menos Tarjetas Esperadas**
-    - **Descripción:** Este reporte destaca los partidos con la menor expectativa de tarjetas amarillas y rojas,
-      basándose en el promedio de tarjetas esperadas de los equipos participantes. Puede ser relevante para aquellos
-      interesados en partidos con menor tensión disciplinaria.
-    - **Datos del Informe:** Fecha del partido, Equipos involucrados, Promedio de tarjetas esperadas.
+   - **Descripción:** Este reporte destaca los partidos con la menor expectativa de tarjetas amarillas y rojas,
+     basándose en el promedio de tarjetas esperadas de los equipos participantes. Puede ser relevante para aquellos
+     interesados en partidos con menor tensión disciplinaria.
+   - **Datos del Informe:** Fecha del partido, Equipos involucrados, Promedio de tarjetas esperadas.
 
 6. **Número de Córners de un Partido Específico**
-    - **Descripción:** Este reporte permite obtener información sobre la cantidad de córners generados durante un
-      partido específico. Es útil para evaluar la presión ejercida por los equipos en el área rival y su capacidad para
-      crear oportunidades de gol a partir de córners.
-    - **Datos del Informe:** Fecha del partido, Equipos involucrados, Número de córners.
+   - **Descripción:** Este reporte permite obtener información sobre la cantidad de córners generados durante un
+     partido específico. Es útil para evaluar la presión ejercida por los equipos en el área rival y su capacidad para
+     crear oportunidades de gol a partir de córners.
+   - **Datos del Informe:** Fecha del partido, Equipos involucrados, Número de córners.
 
 7. **Equipos con Mayor Promedio de Goles**
-    - **Descripción:** Este reporte identifica los equipos con el promedio más alto de goles marcados por partido. Es
-      útil para identificar equipos ofensivamente fuertes.
-    - **Datos del Informe:** Nombre del equipo, Promedio de goles marcados por partido.
+   - **Descripción:** Este reporte identifica los equipos con el promedio más alto de goles marcados por partido. Es
+     útil para identificar equipos ofensivamente fuertes.
+   - **Datos del Informe:** Nombre del equipo, Promedio de goles marcados por partido.
 
 8. **Partidos con Menor Promedio de Goles**
-    - **Descripción:** Este reporte destaca los partidos con el promedio más bajo de goles marcados por partido, lo que
-      puede indicar encuentros más defensivos o con menor potencial de puntuación.
-    - **Datos del Informe:** Fecha del partido, Equipos involucrados, Promedio de goles marcados por partido.
+   - **Descripción:** Este reporte destaca los partidos con el promedio más bajo de goles marcados por partido, lo que
+     puede indicar encuentros más defensivos o con menor potencial de puntuación.
+   - **Datos del Informe:** Fecha del partido, Equipos involucrados, Promedio de goles marcados por partido.
 
 9. **Equipos con Mayor Promedio de Tarjetas Recibidas**
-    - **Descripción:** Este reporte identifica los equipos con el promedio más alto de tarjetas amarillas y rojas
-      recibidas por partido. Puede ser relevante para evaluar el comportamiento disciplinario de los equipos.
-    - **Datos del Informe:** Nombre del equipo, Promedio de tarjetas amarillas recibidas, Promedio de tarjetas rojas
-      recibidas.
+   - **Descripción:** Este reporte identifica los equipos con el promedio más alto de tarjetas amarillas y rojas
+     recibidas por partido. Puede ser relevante para evaluar el comportamiento disciplinario de los equipos.
+   - **Datos del Informe:** Nombre del equipo, Promedio de tarjetas amarillas recibidas, Promedio de tarjetas rojas
+     recibidas.
 
 10. **Partidos con Mayor Diferencia de Goles**
-    - **Descripción:** Este reporte identifica los partidos con la mayor diferencia de goles entre los equipos
-      participantes, lo que puede indicar encuentros especialmente desequilibrados o dominantes por parte de un equipo.
-    - **Datos del Informe:** Equipos involucrados, Diferencia de goles.
+   - **Descripción:** Este reporte identifica los partidos con la mayor diferencia de goles entre los equipos
+     participantes, lo que puede indicar encuentros especialmente desequilibrados o dominantes por parte de un equipo.
+   - **Datos del Informe:** Equipos involucrados, Diferencia de goles.
 
 > [!IMPORTANT]
 > La concepción de nuestra aplicación, el “Pronosticador Deportivo”, se sitúa en un equilibrio entre la originalidad y
