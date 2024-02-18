@@ -44,51 +44,69 @@ análisis y pronóstico de resultados en partidos de fútbol de ligas específic
 ### Entidades
 
 **Usuario (FUERTE):**
-> - ID del usuario
-> - Nombre
-> - Fecha de registro
-> - Liga de preferencia
+
+```bash
+> ID del usuario
+> Nombre
+> Fecha de registro
+> Liga de preferencia
+```
 
 **Equipo (FUERTE):**
-> - ID del equipo
-> - ID de la liga
-> - Nombre del equipo
-> - Estadio
+
+```bash
+> ID del equipo
+> ID de la liga
+> Nombre del equipo
+> Estadio
+```
 
 **Liga (FUERTE):**
-> - ID de la liga
-> - Nombre de la liga
-> - País
-> - Número de equipos
+
+```bash
+> ID de la liga
+> Nombre de la liga
+> País
+> Número de equipos
+```
 
 **Árbitro (FUERTE):**
-> - ID del árbitro
-> - ID de la liga
-> - Nombre del árbitro
-> - Promedio de tarjetas amarillas
-> - Promedio de tarjetas rojas
+
+```bash
+> ID del árbitro
+> ID de la liga
+> Nombre del árbitro
+> Promedio de tarjetas amarillas
+> Promedio de tarjetas rojas
+```
 
 **Partido (DÉBIL):**
-> - ID del partido
-> - Fecha del partido
-> - ID equipo local
-> - ID equipo visitante
-> - ID del árbitro
-> - Promedio de goles esperados
-> - Promedio de córners esperados
-> - Promedio de tarjetas esperadas
+
+```bash
+> ID del partido
+> Fecha del partido
+> ID equipo local
+> ID equipo visitante
+> ID del árbitro
+> Promedio de goles esperados
+> Promedio de córners esperados
+> Promedio de tarjetas esperadas
+```
 
 **Estadísticas (DÉBIL):**
-> - ID del equipo
-> - Número de victorias
-> - Número de derrotas
-> - Número de empates
-> - Puntos totales en la temporada
-> - Promedio de goles
-> - Promedio de córners a favor
-> - Promedio de córners en contra
-> - Promedio de tarjetas a favor
-> - Promedio de tarjetas en contra
+
+```bash
+> ID del equipo
+> Número de victorias
+> Número de derrotas
+> Número de empates
+> Puntos totales en la temporada
+> Promedio de goles
+> Promedio de córners a favor
+> Promedio de córners en contra
+> Promedio de tarjetas a favor
+> Promedio de tarjetas en contra
+```
 
 ### Relaciones
 
