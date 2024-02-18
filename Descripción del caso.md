@@ -165,9 +165,9 @@ análisis y pronóstico de resultados en partidos de fútbol de ligas específic
      recibidas.
 
 10. **Partidos con Mayor Diferencia de Goles**
-   - **Descripción:** Este reporte identifica los partidos con la mayor diferencia de goles entre los equipos
-     participantes, lo que puede indicar encuentros especialmente desequilibrados o dominantes por parte de un equipo.
-   - **Datos del Informe:** Equipos involucrados, Diferencia de goles.
+    - **Descripción:** Este reporte identifica los partidos con la mayor diferencia de goles entre los equipos
+      participantes, lo que puede indicar encuentros especialmente desequilibrados o dominantes por parte de un equipo.
+    - **Datos del Informe:** Equipos involucrados, Diferencia de goles.
 
 > [!IMPORTANT]
 > La concepción de nuestra aplicación, el “Pronosticador Deportivo”, se sitúa en un equilibrio entre la originalidad y
