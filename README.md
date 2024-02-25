@@ -8,14 +8,14 @@
 * David Santiago Donneys Taborda
 * Carlos Tafurt Burbano
 
-## Estándar de Commit
+## Estándar de Commit 📌
 
 ### Estructura del Mensaje de Commit
 
 Cada mensaje de commit consta de tres partes distintas separadas por una línea en blanco: un título, un cuerpo opcional
 y un pie de página opcional. La estructura del mensaje de commit se ve así:
 
-```
+```bash
 <tipo>: <título>
 
 <cuerpo (opcional)>
@@ -57,7 +57,7 @@ El pie de página se utiliza para hacer referencia a las incidencias de seguimie
 
 A continuación, se muestra cómo se ve un mensaje de commit siguiendo esta estructura:
 
-```
+```bash
 feat: Resumen de los cambios en alrededor de 50 caracteres o menos
 
 Se proporciona un resumen conciso de los cambios realizados, limitado a unos 72 caracteres aproximadamente. Se enfatiza 
@@ -74,7 +74,7 @@ Resuelve: #123
 Ver también: #456, #789
 ```
 
-## Guía de Estilos del Código
+## Guía de Estilos del Código 🗒️
 
 ### Indentación
 
@@ -111,4 +111,4 @@ Limitamos todas las líneas a un máximo de 79 caracteres.
 
 Para más detalles, consulte la [Guía de Estilo de Python (PEP 8)](https://recursospython.com/pep8es.pdf).
 
-## Evidencias
+## Evidencias 📸
