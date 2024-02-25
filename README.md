@@ -34,7 +34,6 @@ Debe ser uno de los siguientes:
 - **refactor**: Un cambio de código que ni arregla un error ni añade una característica
 - **perf**: Un cambio de código que mejora el rendimiento
 - **test**: Añadir pruebas faltantes o corregir pruebas existentes
-- **chore**: Cambios en el proceso de construcción o herramientas auxiliares y bibliotecas
 
 ### Título
 
@@ -88,8 +87,7 @@ y los métodos dentro de las clases.
 
 ### Importaciones
 
-Las importaciones deben estar en líneas separadas y al principio del archivo después de cualquier comentario o docstring
-del módulo.
+Las importaciones deben estar en líneas separadas.
 
 ### Espacios en blanco
 
@@ -111,6 +109,6 @@ Limitamos todas las líneas a un máximo de 79 caracteres.
 
 ### Referencias
 
-Para más detalles, consulte la Guía de Estilo de Python (PEP 8).
+Para más detalles, consulte la [Guía de Estilo de Python (PEP 8)](https://recursospython.com/pep8es.pdf).
 
 ## Evidencias
