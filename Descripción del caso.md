@@ -111,6 +111,10 @@ Limitamos todas las líneas a un máximo de 79 caracteres.
 
 Para más detalles, consulte la [Guía de Estilo de Python (PEP 8)](https://recursospython.com/pep8es.pdf).
 
+## Forma de ejecutar el código
+
+Nota: El código se puede ejecutar desde la carpeta "code" utilizando el comando `python Main.py` o desde un IDE.
+
 ## Evidencias 📸
 
 ### Creación de ramas
@@ -133,12 +137,8 @@ Para más detalles, consulte la [Guía de Estilo de Python (PEP 8)](https://recu
 
 ### Ejecución del código
 
-<img src="https://i.ibb.co/dPx5g7h/Captura-de-pantalla-2024-02-26-104814.png" alt="Captura-de-pantalla-2024-02-26-104814" border="0">
+<img src="https://i.ibb.co/yXjtnmQ/Captura-de-pantalla-2024-02-26-104814.png" alt="Captura-de-pantalla-2024-02-26-104814" border="0">
 
-<img src="https://i.ibb.co/qdz4RG0/Captura-de-pantalla-2024-02-26-104842.png" alt="Captura-de-pantalla-2024-02-26-104842" border="0">
+<img src="https://i.ibb.co/brMq4z6/Captura-de-pantalla-2024-02-26-104842.png" alt="Captura-de-pantalla-2024-02-26-104842" border="0">
 
-<img src="https://i.ibb.co/kmRWtgQ/Captura-de-pantalla-2024-02-26-104907.png" alt="Captura-de-pantalla-2024-02-26-104907" border="0">
-
-### Forma de ejecutar el código
-
-Nota: El código se puede ejecutar desde la carpeta "code" utilizando el comando `python Main.py` o desde un IDE.
+<img src="https://i.ibb.co/SJgk9FX/Captura-de-pantalla-2024-02-26-104907.png" alt="Captura-de-pantalla-2024-02-26-104907" border="0">
